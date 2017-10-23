@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/daniel/.config/google-chrome/Default/Local App Settings'
+let g:netrw_dirhist_2='/home/daniel/.ncmpcpp'
+let g:netrw_dirhist_3='/home/daniel/Github/macOS-Setup/.git'
+let g:netrw_dirhist_4='/home/daniel/Dropbox/Websites/danielwesser.com/0 Live Site/.git'
+let g:netrw_dirhist_5='/home/daniel/.config'
+let g:netrw_dirhist_6='/home/daniel/Desktop/.metadata'
