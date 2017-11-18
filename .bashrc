@@ -66,7 +66,8 @@ unset color_prompt force_color_prompt
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ '
+    #PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
     ;;
 *)
     ;;
@@ -127,6 +128,7 @@ alias vim="nvim"
 
 # Open Todo List
 alias todo='vim ~/Dropbox/Lists/Personal.taskpaper'
+
 # Convert file from GitHub Markdown to .docx using whatever extensions and styles are currently needed.
 # Maybe change this to 'typora2docx'?
 alias ghm2docx='pandoc -f markdown_github+footnotes -t docx -o test.docx'
@@ -135,7 +137,7 @@ alias ghm2docx='pandoc -f markdown_github+footnotes -t docx -o test.docx'
 alias mknote="cd ~/Dropbox/Notes && nvim" 
 
 # Christmas Notes
-alias xmas="nvim ~/Dropbox/Notes/2017\ Christmas.md"
+alias xmas="vim ~/Dropbox/Notes/2017\ Christmas.md"
 
 # Make terminal quit like Vim
 alias :q='exit'
